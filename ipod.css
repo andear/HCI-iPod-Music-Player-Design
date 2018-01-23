@@ -1,0 +1,147 @@
+/* 
+	Global classes 
+					*/
+body {
+	background-image: url("images/iphoneOL.jpg");
+	background-repeat: no-repeat;
+	font-family: Avenir, sans-serif;
+}
+
+
+#screen {
+	height: 530px;
+	width: 300px;
+	margin: 105px 23px;
+}
+
+.head-bar {
+	text-align: center;
+	background-color: #E6CCFF;
+	color: #ffffff;
+	text-shadow: black 0.1em 0.1em 0.2em
+}
+
+.back-button {
+	width: 55px;
+	height: 34px;
+	padding: 5px;
+	position:relative;
+	left: -115px;
+}
+
+/* 
+	Albums 
+			*/
+.albums-album-wrapper {
+	display: inline;
+	float: left;
+	padding: 5px;
+	padding-bottom: 40px;
+}
+
+.albums-album-art {
+	width: 140px;
+	height: 140px;
+}
+
+.albums-album-name {
+	text-align: center;
+	font-weight: bold;
+}
+
+.albums-artist-name {
+	text-align: center;
+	font-style: italic;
+	font-size: small;
+}
+
+/* 
+	Songs 
+			*/
+.songs-info-wrapper {
+	padding: 10px;
+}
+
+.songs-album-art {
+	width: 150px;
+	height: 150px;
+	float: left;
+	padding-right: 5px;
+
+}
+
+.songs-album-name {
+	font-size: x-large;
+	font-weight: bold;
+	float: left;
+	padding: 10px;
+}
+
+.songs-artist-name {
+	font-style: italic;
+	font-size: large;
+	float: left;
+	padding: 10px;
+}
+
+.songs-text-info {
+	display: block;
+	float: left;
+	width: 300px;
+	padding-top: 10px;
+}
+
+.songs-album-year {
+	float: left;
+	padding: 10px;
+}
+
+.songs-list {
+	border-width: 1px;
+	border-style: groove;
+	margin: 6px;
+
+}
+
+/* 
+	Player 
+			*/
+.player-album-art {
+	
+}
+
+.player-song-info {
+	
+}
+
+#player-song-name {
+	
+}
+
+.volume-bar {
+	
+}
+
+.volume-level {
+	
+}
+
+.volume-rocker {
+	
+}
+
+.player-controls{
+	
+}
+
+#player-time {
+	
+}
+
+#time-elapsed {
+	
+}
+
+#time-total{
+	
+}
