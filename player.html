@@ -8,7 +8,6 @@
 <body>
    <div id="screen">
      <div class="head-bar">
-      <!--<div class="back-button"><i class="material-icons">arrow_back</i></div>-->
         <a href="songs.html">
            <img src="images/arrow.png" class="back-button">
         </a>
@@ -30,12 +29,13 @@
 
    <div class="player-controls">
       <button onclick="prevSong()"> <i class="material-icons">skip_previous</i> </button>
-      <button onclick="switchPlay()"> <i class="material-icons">play_arrow</i> </button>
+      <button id="switch" onclick="switchPlay()"> <i class="material-icons">play_arrow</i> </button>
       <button onclick="nextSong()"> <i class="material-icons">skip_next</i> </button>
 
    </div>
    <div class="volume-level">
-      <div style="float: left"><i class="material-icons">volume_down</i></div>
+      <div id="volume_down"><i class="material-icons">volume_down</i></div>
+
       <div id="vl0" class="volume-bar"></div>
       <div id="vl1" class="volume-bar"></div>
       <div id="vl2" class="volume-bar"></div>

@@ -136,7 +136,7 @@ body {
 	float: left;
 	height: 6px;
 	width: 24px;
-	background-color: #9f5cc4;
+	/*background-color: #9f5cc4;*/
 	margin: 6px;
 	margin-top: 8px;
 	border-width: 1px;
@@ -159,6 +159,9 @@ body {
 	border-radius:5px;
 }
 
+#volume_down{
+	float: left;
+}
 .player-controls{
 	float: left;
 	padding: 5px;
