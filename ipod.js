@@ -2,10 +2,12 @@
 var tracklist = ["Let It Happen", "Nangs", "The Moment", "Yes I'm Changing", "Eventually", "Gossip", "The Less I Know The Better", "Past Life", "Disciples", "'Cause I'm A Man"];
 var volLevels = [];
 var volume = 3;
-//0 for status: stop
-//1 for status: play
+//0 for status: stoping
+//1 for status: playing
 var status = 0;
 var currentTime = 0;
+//iter is the number of the song in the tracklist
+//initial with the 6th song
 var iter = 6;
 
 function init() {
@@ -112,3 +114,14 @@ function updateTime() {
 
 init();
 var seconds = setInterval(function(){ updateTime() }, 1000);
+var slider = document.getElementById("player-time");
+
+//if move the slider, update the "time-elapsed"
+slider.oninput = function() {
+    currentTime = this.value;
+    var timeElapsed = document.getElementById("time-elapsed");
+    timeElapsed.innerText = secondsToMs(currentTime);
+    if(currentTime == 180){
+        nextSong();
+    }
+}
